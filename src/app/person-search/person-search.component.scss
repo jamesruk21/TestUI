@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px){
+    #searchButton{
+        margin-top: -4px;
+        margin-left: 40px;
+        }
+
+        .alert{
+            margin-top: 2px;
+        }
+    
+    /* Add more styles as needed */
+}
+
+@media only screen and (max-width: 767px){
+    #searchButton{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        }
+    
+    /* Add more styles as needed */
+}
+
+.card{
+    margin-top:10px;
+}

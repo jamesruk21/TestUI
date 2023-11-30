@@ -1,27 +1,19 @@
-# Testui
+Hi,
+"npm install" to get packages
+Before starting, start the API in visual studio, normal debug is fine.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+"npm start" to start, open a browser window at http://localhost:4200/
+"npm test" to test
 
-## Development server
+In this angular app is a single page component in person-search. The page has controls and logic to call the person.service.ts. This service gets the data from the .NET API. The data is an array of person objects. It then uses a *ngfor loop to create the table rows. Some basic logic in here around the warning div, this is added based on the requirement in the test doc.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+So once you've got it running, the home page is the Person Search page. Add your test search term, or not, and click the button.
 
-## Code scaffolding
+If there's a problem with the API URL when in debug mode, the API URL is in teh environments/environment.ts file.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Thanks for your time and the interview.
 
-## Build
+I wish you all well whatever happens.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Regards
+Jim

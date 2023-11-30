@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header">{{pageTitle}}</div>
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Search term:</div>
+            <div class="col-md-3"><input type="text" [(ngModel)]="searchTerm"/></div>
+            <div class="col-md-1" id="searchButton"><button class="btn btn-primary" (click)="getPersonData()">Search</button></div>
+        </div>
+        <div class="alert alert-warning" role="alert" *ngIf="warningText">
+            <div class="col-md-6">{{warningText}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Searched term used: {{searchTermUsed}}</div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf="people.length">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last name</th>
+                        <th>Email</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let person of people'>
+                        <td>{{ person.id }}</td>
+                        <td>{{ person.first_name }}</td>
+                        <td>{{ person.last_name }}</td>
+                        <td>{{ person.email }}</td>
+                        <td>{{ person.gender }}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
